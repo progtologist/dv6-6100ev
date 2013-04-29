@@ -1317,7 +1317,7 @@ DefinitionBlock ("dsdt.aml", "DSDT", 1, "HP    ", "INSYDE  ", 0xF0000000)
                     0x80000000,         // Range Minimum
                     0xF7FFFFFF,         // Range Maximum
                     0x00000000,         // Translation Offset
-                    0x77000000,         // Length
+                    0x78000000,         // Length
                     0x00,, _Y00, AddressRangeMemory, TypeStatic)
                 DWordMemory (ResourceProducer, SubDecode, MinFixed, MaxFixed, NonCacheable, ReadWrite,
                     0x00000000,         // Granularity
@@ -7273,8 +7273,9 @@ DefinitionBlock ("dsdt.aml", "DSDT", 1, "HP    ", "INSYDE  ", 0xF0000000)
                             Zero, 
                             Zero
                         })
-                        Name (_PLD, Buffer (0x10)  // _PLD: Physical Location of Device
+                        Name (_PLD, Package (0x1)  // _PLD: Physical Location of Device
                         {
+                            Buffer (0x10) {
                             /* 0000 */   0x81, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
                             /* 0008 */   0xA1, 0x10, 0x00, 0x00, 0x03, 0x00, 0x00, 0x00
                             /*           Revision : 01     */
@@ -7302,6 +7303,7 @@ DefinitionBlock ("dsdt.aml", "DSDT", 1, "HP    ", "INSYDE  ", 0xF0000000)
                             /*              Order : 00     */
                             /*     VerticalOffset : 0000   */
                             /*   HorizontalOffset : 0000   */
+                            }
                         })
                     }
 
@@ -7315,8 +7317,9 @@ DefinitionBlock ("dsdt.aml", "DSDT", 1, "HP    ", "INSYDE  ", 0xF0000000)
                             Zero, 
                             Zero
                         })
-                        Name (_PLD, Buffer (0x10)  // _PLD: Physical Location of Device
+                        Name (_PLD, Package (0x1)  // _PLD: Physical Location of Device
                         {
+                            Buffer (0x10) {
                             /* 0000 */   0x81, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
                             /* 0008 */   0xA1, 0x10, 0x00, 0x00, 0x03, 0x00, 0x00, 0x00
                             /*           Revision : 01     */
@@ -7344,6 +7347,7 @@ DefinitionBlock ("dsdt.aml", "DSDT", 1, "HP    ", "INSYDE  ", 0xF0000000)
                             /*              Order : 00     */
                             /*     VerticalOffset : 0000   */
                             /*   HorizontalOffset : 0000   */
+                            }
                         })
                     }
 
@@ -7357,8 +7361,9 @@ DefinitionBlock ("dsdt.aml", "DSDT", 1, "HP    ", "INSYDE  ", 0xF0000000)
                             Zero, 
                             Zero
                         })
-                        Name (_PLD, Buffer (0x10)  // _PLD: Physical Location of Device
+                        Name (_PLD, Package (0x1)  // _PLD: Physical Location of Device
                         {
+                            Buffer (0x10) {
                             /* 0000 */   0x81, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
                             /* 0008 */   0xA0, 0x10, 0x00, 0x00, 0x03, 0x00, 0x00, 0x00
                             /*           Revision : 01     */
@@ -7386,6 +7391,7 @@ DefinitionBlock ("dsdt.aml", "DSDT", 1, "HP    ", "INSYDE  ", 0xF0000000)
                             /*              Order : 00     */
                             /*     VerticalOffset : 0000   */
                             /*   HorizontalOffset : 0000   */
+                            }
                         })
                     }
 
@@ -7399,8 +7405,9 @@ DefinitionBlock ("dsdt.aml", "DSDT", 1, "HP    ", "INSYDE  ", 0xF0000000)
                             Zero, 
                             Zero
                         })
-                        Name (_PLD, Buffer (0x10)  // _PLD: Physical Location of Device
+                        Name (_PLD, Package (0x1)  // _PLD: Physical Location of Device
                         {
+                            Buffer (0x10) {
                             /* 0000 */   0x81, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
                             /* 0008 */   0xA0, 0x10, 0x00, 0x00, 0x03, 0x00, 0x00, 0x00
                             /*           Revision : 01     */
@@ -7428,6 +7435,7 @@ DefinitionBlock ("dsdt.aml", "DSDT", 1, "HP    ", "INSYDE  ", 0xF0000000)
                             /*              Order : 00     */
                             /*     VerticalOffset : 0000   */
                             /*   HorizontalOffset : 0000   */
+                            }
                         })
                     }
 
@@ -7441,8 +7449,9 @@ DefinitionBlock ("dsdt.aml", "DSDT", 1, "HP    ", "INSYDE  ", 0xF0000000)
                             Zero, 
                             Zero
                         })
-                        Name (_PLD, Buffer (0x10)  // _PLD: Physical Location of Device
+                        Name (_PLD, Package (0x1)  // _PLD: Physical Location of Device
                         {
+                            Buffer (0x10) {
                             /* 0000 */   0x81, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
                             /* 0008 */   0xA0, 0x10, 0x00, 0x00, 0x03, 0x00, 0x00, 0x00
                             /*           Revision : 01     */
@@ -7470,6 +7479,7 @@ DefinitionBlock ("dsdt.aml", "DSDT", 1, "HP    ", "INSYDE  ", 0xF0000000)
                             /*              Order : 00     */
                             /*     VerticalOffset : 0000   */
                             /*   HorizontalOffset : 0000   */
+                            }
                         })
                     }
                 }
@@ -7512,8 +7522,9 @@ DefinitionBlock ("dsdt.aml", "DSDT", 1, "HP    ", "INSYDE  ", 0xF0000000)
                             Zero, 
                             Zero
                         })
-                        Name (_PLD, Buffer (0x10)  // _PLD: Physical Location of Device
+                        Name (_PLD, Package (0x1)  // _PLD: Physical Location of Device
                         {
+                            Buffer (0x10) {
                             /* 0000 */   0x81, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
                             /* 0008 */   0xA0, 0x10, 0x00, 0x00, 0x03, 0x00, 0x00, 0x00
                             /*           Revision : 01     */
@@ -7541,6 +7552,7 @@ DefinitionBlock ("dsdt.aml", "DSDT", 1, "HP    ", "INSYDE  ", 0xF0000000)
                             /*              Order : 00     */
                             /*     VerticalOffset : 0000   */
                             /*   HorizontalOffset : 0000   */
+                            }
                         })
                     }
 
@@ -7554,8 +7566,9 @@ DefinitionBlock ("dsdt.aml", "DSDT", 1, "HP    ", "INSYDE  ", 0xF0000000)
                             Zero, 
                             Zero
                         })
-                        Name (_PLD, Buffer (0x10)  // _PLD: Physical Location of Device
+                        Name (_PLD, Package (0x1)  // _PLD: Physical Location of Device
                         {
+                            Buffer (0x10) {
                             /* 0000 */   0x81, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
                             /* 0008 */   0xA0, 0x10, 0x00, 0x00, 0x03, 0x00, 0x00, 0x00
                             /*           Revision : 01     */
@@ -7583,6 +7596,7 @@ DefinitionBlock ("dsdt.aml", "DSDT", 1, "HP    ", "INSYDE  ", 0xF0000000)
                             /*              Order : 00     */
                             /*     VerticalOffset : 0000   */
                             /*   HorizontalOffset : 0000   */
+                            }
                         })
                     }
 
@@ -7596,8 +7610,9 @@ DefinitionBlock ("dsdt.aml", "DSDT", 1, "HP    ", "INSYDE  ", 0xF0000000)
                             Zero, 
                             Zero
                         })
-                        Name (_PLD, Buffer (0x10)  // _PLD: Physical Location of Device
+                        Name (_PLD, Package (0x1)  // _PLD: Physical Location of Device
                         {
+                            Buffer (0x10) {
                             /* 0000 */   0x81, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
                             /* 0008 */   0xA0, 0x10, 0x00, 0x00, 0x03, 0x00, 0x00, 0x00
                             /*           Revision : 01     */
@@ -7625,6 +7640,7 @@ DefinitionBlock ("dsdt.aml", "DSDT", 1, "HP    ", "INSYDE  ", 0xF0000000)
                             /*              Order : 00     */
                             /*     VerticalOffset : 0000   */
                             /*   HorizontalOffset : 0000   */
+                            }
                         })
                     }
 
@@ -7638,8 +7654,9 @@ DefinitionBlock ("dsdt.aml", "DSDT", 1, "HP    ", "INSYDE  ", 0xF0000000)
                             Zero, 
                             Zero
                         })
-                        Name (_PLD, Buffer (0x10)  // _PLD: Physical Location of Device
+                        Name (_PLD, Package (0x1)  // _PLD: Physical Location of Device
                         {
+                            Buffer (0x10) {
                             /* 0000 */   0x81, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
                             /* 0008 */   0xA0, 0x10, 0x00, 0x00, 0x03, 0x00, 0x00, 0x00
                             /*           Revision : 01     */
@@ -7667,6 +7684,7 @@ DefinitionBlock ("dsdt.aml", "DSDT", 1, "HP    ", "INSYDE  ", 0xF0000000)
                             /*              Order : 00     */
                             /*     VerticalOffset : 0000   */
                             /*   HorizontalOffset : 0000   */
+                            }
                         })
                     }
 
@@ -7680,8 +7698,9 @@ DefinitionBlock ("dsdt.aml", "DSDT", 1, "HP    ", "INSYDE  ", 0xF0000000)
                             Zero, 
                             Zero
                         })
-                        Name (_PLD, Buffer (0x10)  // _PLD: Physical Location of Device
+                        Name (_PLD, Package (0x1)  // _PLD: Physical Location of Device
                         {
+                            Buffer (0x10) {
                             /* 0000 */   0x81, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
                             /* 0008 */   0xA0, 0x10, 0x00, 0x00, 0x03, 0x00, 0x00, 0x00
                             /*           Revision : 01     */
@@ -7709,6 +7728,7 @@ DefinitionBlock ("dsdt.aml", "DSDT", 1, "HP    ", "INSYDE  ", 0xF0000000)
                             /*              Order : 00     */
                             /*     VerticalOffset : 0000   */
                             /*   HorizontalOffset : 0000   */
+                            }
                         })
                     }
                 }
@@ -7751,8 +7771,9 @@ DefinitionBlock ("dsdt.aml", "DSDT", 1, "HP    ", "INSYDE  ", 0xF0000000)
                             Zero, 
                             Zero
                         })
-                        Name (_PLD, Buffer (0x10)  // _PLD: Physical Location of Device
+                        Name (_PLD, Package (0x1)  // _PLD: Physical Location of Device
                         {
+                            Buffer (0x10) {
                             /* 0000 */   0x81, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
                             /* 0008 */   0xA1, 0x10, 0x00, 0x00, 0x03, 0x00, 0x00, 0x00
                             /*           Revision : 01     */
@@ -7780,6 +7801,7 @@ DefinitionBlock ("dsdt.aml", "DSDT", 1, "HP    ", "INSYDE  ", 0xF0000000)
                             /*              Order : 00     */
                             /*     VerticalOffset : 0000   */
                             /*   HorizontalOffset : 0000   */
+                            }
                         })
                     }
 
@@ -7793,8 +7815,9 @@ DefinitionBlock ("dsdt.aml", "DSDT", 1, "HP    ", "INSYDE  ", 0xF0000000)
                             Zero, 
                             Zero
                         })
-                        Name (_PLD, Buffer (0x10)  // _PLD: Physical Location of Device
+                        Name (_PLD, Package (0x1)  // _PLD: Physical Location of Device
                         {
+                            Buffer (0x10) {
                             /* 0000 */   0x81, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
                             /* 0008 */   0xA0, 0x10, 0x00, 0x00, 0x03, 0x00, 0x00, 0x00
                             /*           Revision : 01     */
@@ -7822,6 +7845,7 @@ DefinitionBlock ("dsdt.aml", "DSDT", 1, "HP    ", "INSYDE  ", 0xF0000000)
                             /*              Order : 00     */
                             /*     VerticalOffset : 0000   */
                             /*   HorizontalOffset : 0000   */
+                            }
                         })
                     }
 
@@ -7835,8 +7859,9 @@ DefinitionBlock ("dsdt.aml", "DSDT", 1, "HP    ", "INSYDE  ", 0xF0000000)
                             Zero, 
                             Zero
                         })
-                        Name (_PLD, Buffer (0x10)  // _PLD: Physical Location of Device
+                        Name (_PLD, Package (0x1)  // _PLD: Physical Location of Device
                         {
+                            Buffer (0x10) {
                             /* 0000 */   0x81, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
                             /* 0008 */   0xA1, 0x10, 0x00, 0x00, 0x03, 0x00, 0x00, 0x00
                             /*           Revision : 01     */
@@ -7864,6 +7889,7 @@ DefinitionBlock ("dsdt.aml", "DSDT", 1, "HP    ", "INSYDE  ", 0xF0000000)
                             /*              Order : 00     */
                             /*     VerticalOffset : 0000   */
                             /*   HorizontalOffset : 0000   */
+                            }
                         })
                     }
 
@@ -7877,8 +7903,9 @@ DefinitionBlock ("dsdt.aml", "DSDT", 1, "HP    ", "INSYDE  ", 0xF0000000)
                             Zero, 
                             Zero
                         })
-                        Name (_PLD, Buffer (0x10)  // _PLD: Physical Location of Device
+                        Name (_PLD, Package (0x1)  // _PLD: Physical Location of Device
                         {
+                            Buffer (0x10) {
                             /* 0000 */   0x81, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
                             /* 0008 */   0xA0, 0x10, 0x00, 0x00, 0x03, 0x00, 0x00, 0x00
                             /*           Revision : 01     */
@@ -7906,6 +7933,7 @@ DefinitionBlock ("dsdt.aml", "DSDT", 1, "HP    ", "INSYDE  ", 0xF0000000)
                             /*              Order : 00     */
                             /*     VerticalOffset : 0000   */
                             /*   HorizontalOffset : 0000   */
+                            }
                         })
                     }
                 }
@@ -7978,8 +8006,9 @@ DefinitionBlock ("dsdt.aml", "DSDT", 1, "HP    ", "INSYDE  ", 0xF0000000)
                             Zero, 
                             Zero
                         })
-                        Name (_PLD, Buffer (0x10)  // _PLD: Physical Location of Device
+                        Name (_PLD, Package (0x1)  // _PLD: Physical Location of Device
                         {
+                            Buffer (0x10) {
                             /* 0000 */   0x81, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
                             /* 0008 */   0xA1, 0x10, 0x00, 0x00, 0x03, 0x00, 0x00, 0x00
                             /*           Revision : 01     */
@@ -8007,6 +8036,7 @@ DefinitionBlock ("dsdt.aml", "DSDT", 1, "HP    ", "INSYDE  ", 0xF0000000)
                             /*              Order : 00     */
                             /*     VerticalOffset : 0000   */
                             /*   HorizontalOffset : 0000   */
+                            }
                         })
                     }
 
@@ -8020,8 +8050,9 @@ DefinitionBlock ("dsdt.aml", "DSDT", 1, "HP    ", "INSYDE  ", 0xF0000000)
                             Zero, 
                             Zero
                         })
-                        Name (_PLD, Buffer (0x10)  // _PLD: Physical Location of Device
+                        Name (_PLD, Package (0x1)  // _PLD: Physical Location of Device
                         {
+                            Buffer (0x10) {
                             /* 0000 */   0x81, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
                             /* 0008 */   0xA1, 0x10, 0x00, 0x00, 0x03, 0x00, 0x00, 0x00
                             /*           Revision : 01     */
@@ -8049,6 +8080,7 @@ DefinitionBlock ("dsdt.aml", "DSDT", 1, "HP    ", "INSYDE  ", 0xF0000000)
                             /*              Order : 00     */
                             /*     VerticalOffset : 0000   */
                             /*   HorizontalOffset : 0000   */
+                            }
                         })
                     }
 
@@ -8062,8 +8094,9 @@ DefinitionBlock ("dsdt.aml", "DSDT", 1, "HP    ", "INSYDE  ", 0xF0000000)
                             Zero, 
                             Zero
                         })
-                        Name (_PLD, Buffer (0x10)  // _PLD: Physical Location of Device
+                        Name (_PLD, Package (0x1)  // _PLD: Physical Location of Device
                         {
+                            Buffer (0x10) {
                             /* 0000 */   0x81, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
                             /* 0008 */   0xA0, 0x10, 0x00, 0x00, 0x03, 0x00, 0x00, 0x00
                             /*           Revision : 01     */
@@ -8091,6 +8124,7 @@ DefinitionBlock ("dsdt.aml", "DSDT", 1, "HP    ", "INSYDE  ", 0xF0000000)
                             /*              Order : 00     */
                             /*     VerticalOffset : 0000   */
                             /*   HorizontalOffset : 0000   */
+                            }
                         })
                     }
 
@@ -8104,8 +8138,9 @@ DefinitionBlock ("dsdt.aml", "DSDT", 1, "HP    ", "INSYDE  ", 0xF0000000)
                             Zero, 
                             Zero
                         })
-                        Name (_PLD, Buffer (0x10)  // _PLD: Physical Location of Device
+                        Name (_PLD, Package (0x1)  // _PLD: Physical Location of Device
                         {
+                            Buffer (0x10) {
                             /* 0000 */   0x81, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
                             /* 0008 */   0xA0, 0x10, 0x00, 0x00, 0x03, 0x00, 0x00, 0x00
                             /*           Revision : 01     */
@@ -8133,6 +8168,7 @@ DefinitionBlock ("dsdt.aml", "DSDT", 1, "HP    ", "INSYDE  ", 0xF0000000)
                             /*              Order : 00     */
                             /*     VerticalOffset : 0000   */
                             /*   HorizontalOffset : 0000   */
+                            }
                         })
                     }
 
@@ -8146,8 +8182,9 @@ DefinitionBlock ("dsdt.aml", "DSDT", 1, "HP    ", "INSYDE  ", 0xF0000000)
                             Zero, 
                             Zero
                         })
-                        Name (_PLD, Buffer (0x10)  // _PLD: Physical Location of Device
+                        Name (_PLD, Package (0x1)  // _PLD: Physical Location of Device
                         {
+                            Buffer (0x10) {
                             /* 0000 */   0x81, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
                             /* 0008 */   0xA0, 0x10, 0x00, 0x00, 0x03, 0x00, 0x00, 0x00
                             /*           Revision : 01     */
@@ -8175,6 +8212,7 @@ DefinitionBlock ("dsdt.aml", "DSDT", 1, "HP    ", "INSYDE  ", 0xF0000000)
                             /*              Order : 00     */
                             /*     VerticalOffset : 0000   */
                             /*   HorizontalOffset : 0000   */
+                            }
                         })
                     }
                 }
@@ -8212,8 +8250,9 @@ DefinitionBlock ("dsdt.aml", "DSDT", 1, "HP    ", "INSYDE  ", 0xF0000000)
                             Zero, 
                             Zero
                         })
-                        Name (_PLD, Buffer (0x10)  // _PLD: Physical Location of Device
+                        Name (_PLD, Package (0x1)  // _PLD: Physical Location of Device
                         {
+                            Buffer (0x10) {
                             /* 0000 */   0x81, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
                             /* 0008 */   0xA0, 0x10, 0x00, 0x00, 0x03, 0x00, 0x00, 0x00
                             /*           Revision : 01     */
@@ -8241,6 +8280,7 @@ DefinitionBlock ("dsdt.aml", "DSDT", 1, "HP    ", "INSYDE  ", 0xF0000000)
                             /*              Order : 00     */
                             /*     VerticalOffset : 0000   */
                             /*   HorizontalOffset : 0000   */
+                            }
                         })
                     }
 
@@ -8254,8 +8294,9 @@ DefinitionBlock ("dsdt.aml", "DSDT", 1, "HP    ", "INSYDE  ", 0xF0000000)
                             Zero, 
                             Zero
                         })
-                        Name (_PLD, Buffer (0x10)  // _PLD: Physical Location of Device
+                        Name (_PLD, Package (0x1)  // _PLD: Physical Location of Device
                         {
+                            Buffer (0x10) {
                             /* 0000 */   0x81, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
                             /* 0008 */   0xA0, 0x10, 0x00, 0x00, 0x03, 0x00, 0x00, 0x00
                             /*           Revision : 01     */
@@ -8283,6 +8324,7 @@ DefinitionBlock ("dsdt.aml", "DSDT", 1, "HP    ", "INSYDE  ", 0xF0000000)
                             /*              Order : 00     */
                             /*     VerticalOffset : 0000   */
                             /*   HorizontalOffset : 0000   */
+                            }
                         })
                     }
 
@@ -8296,8 +8338,9 @@ DefinitionBlock ("dsdt.aml", "DSDT", 1, "HP    ", "INSYDE  ", 0xF0000000)
                             Zero, 
                             Zero
                         })
-                        Name (_PLD, Buffer (0x10)  // _PLD: Physical Location of Device
+                        Name (_PLD, Package (0x1)  // _PLD: Physical Location of Device
                         {
+                            Buffer (0x10) {
                             /* 0000 */   0x81, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
                             /* 0008 */   0xA0, 0x10, 0x00, 0x00, 0x03, 0x00, 0x00, 0x00
                             /*           Revision : 01     */
@@ -8325,6 +8368,7 @@ DefinitionBlock ("dsdt.aml", "DSDT", 1, "HP    ", "INSYDE  ", 0xF0000000)
                             /*              Order : 00     */
                             /*     VerticalOffset : 0000   */
                             /*   HorizontalOffset : 0000   */
+                            }
                         })
                     }
 
@@ -8338,8 +8382,9 @@ DefinitionBlock ("dsdt.aml", "DSDT", 1, "HP    ", "INSYDE  ", 0xF0000000)
                             Zero, 
                             Zero
                         })
-                        Name (_PLD, Buffer (0x10)  // _PLD: Physical Location of Device
+                        Name (_PLD, Package (0x1)  // _PLD: Physical Location of Device
                         {
+                            Buffer (0x10) {
                             /* 0000 */   0x81, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
                             /* 0008 */   0xA0, 0x10, 0x00, 0x00, 0x03, 0x00, 0x00, 0x00
                             /*           Revision : 01     */
@@ -8367,6 +8412,7 @@ DefinitionBlock ("dsdt.aml", "DSDT", 1, "HP    ", "INSYDE  ", 0xF0000000)
                             /*              Order : 00     */
                             /*     VerticalOffset : 0000   */
                             /*   HorizontalOffset : 0000   */
+                            }
                         })
                     }
 
@@ -8380,8 +8426,9 @@ DefinitionBlock ("dsdt.aml", "DSDT", 1, "HP    ", "INSYDE  ", 0xF0000000)
                             Zero, 
                             Zero
                         })
-                        Name (_PLD, Buffer (0x10)  // _PLD: Physical Location of Device
+                        Name (_PLD, Package (0x1)  // _PLD: Physical Location of Device
                         {
+                            Buffer (0x10) {
                             /* 0000 */   0x81, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
                             /* 0008 */   0xA0, 0x10, 0x00, 0x00, 0x03, 0x00, 0x00, 0x00
                             /*           Revision : 01     */
@@ -8409,6 +8456,7 @@ DefinitionBlock ("dsdt.aml", "DSDT", 1, "HP    ", "INSYDE  ", 0xF0000000)
                             /*              Order : 00     */
                             /*     VerticalOffset : 0000   */
                             /*   HorizontalOffset : 0000   */
+                            }
                         })
                     }
                 }
@@ -8446,8 +8494,9 @@ DefinitionBlock ("dsdt.aml", "DSDT", 1, "HP    ", "INSYDE  ", 0xF0000000)
                             Zero, 
                             Zero
                         })
-                        Name (_PLD, Buffer (0x10)  // _PLD: Physical Location of Device
+                        Name (_PLD, Package (0x1)  // _PLD: Physical Location of Device
                         {
+                            Buffer (0x10) {
                             /* 0000 */   0x81, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
                             /* 0008 */   0xA1, 0x10, 0x00, 0x00, 0x03, 0x00, 0x00, 0x00
                             /*           Revision : 01     */
@@ -8475,6 +8524,7 @@ DefinitionBlock ("dsdt.aml", "DSDT", 1, "HP    ", "INSYDE  ", 0xF0000000)
                             /*              Order : 00     */
                             /*     VerticalOffset : 0000   */
                             /*   HorizontalOffset : 0000   */
+                            }
                         })
                     }
 
@@ -8488,8 +8538,9 @@ DefinitionBlock ("dsdt.aml", "DSDT", 1, "HP    ", "INSYDE  ", 0xF0000000)
                             Zero, 
                             Zero
                         })
-                        Name (_PLD, Buffer (0x10)  // _PLD: Physical Location of Device
+                        Name (_PLD, Package (0x1)  // _PLD: Physical Location of Device
                         {
+                            Buffer (0x10) {
                             /* 0000 */   0x81, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
                             /* 0008 */   0xA0, 0x10, 0x00, 0x00, 0x03, 0x00, 0x00, 0x00
                             /*           Revision : 01     */
@@ -8517,6 +8568,7 @@ DefinitionBlock ("dsdt.aml", "DSDT", 1, "HP    ", "INSYDE  ", 0xF0000000)
                             /*              Order : 00     */
                             /*     VerticalOffset : 0000   */
                             /*   HorizontalOffset : 0000   */
+                            }
                         })
                     }
 
@@ -8530,8 +8582,9 @@ DefinitionBlock ("dsdt.aml", "DSDT", 1, "HP    ", "INSYDE  ", 0xF0000000)
                             Zero, 
                             Zero
                         })
-                        Name (_PLD, Buffer (0x10)  // _PLD: Physical Location of Device
+                        Name (_PLD, Package (0x1)  // _PLD: Physical Location of Device
                         {
+                            Buffer (0x10) {
                             /* 0000 */   0x81, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
                             /* 0008 */   0xA1, 0x10, 0x00, 0x00, 0x03, 0x00, 0x00, 0x00
                             /*           Revision : 01     */
@@ -8559,6 +8612,7 @@ DefinitionBlock ("dsdt.aml", "DSDT", 1, "HP    ", "INSYDE  ", 0xF0000000)
                             /*              Order : 00     */
                             /*     VerticalOffset : 0000   */
                             /*   HorizontalOffset : 0000   */
+                            }
                         })
                     }
 
@@ -8572,8 +8626,9 @@ DefinitionBlock ("dsdt.aml", "DSDT", 1, "HP    ", "INSYDE  ", 0xF0000000)
                             Zero, 
                             Zero
                         })
-                        Name (_PLD, Buffer (0x10)  // _PLD: Physical Location of Device
+                        Name (_PLD, Package (0x1)  // _PLD: Physical Location of Device
                         {
+                            Buffer (0x10) {
                             /* 0000 */   0x81, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
                             /* 0008 */   0xA0, 0x10, 0x00, 0x00, 0x03, 0x00, 0x00, 0x00
                             /*           Revision : 01     */
@@ -8601,6 +8656,7 @@ DefinitionBlock ("dsdt.aml", "DSDT", 1, "HP    ", "INSYDE  ", 0xF0000000)
                             /*              Order : 00     */
                             /*     VerticalOffset : 0000   */
                             /*   HorizontalOffset : 0000   */
+                            }
                         })
                     }
                 }
@@ -8627,8 +8683,9 @@ DefinitionBlock ("dsdt.aml", "DSDT", 1, "HP    ", "INSYDE  ", 0xF0000000)
                             Zero, 
                             Zero
                         })
-                        Name (_PLD, Buffer (0x10)  // _PLD: Physical Location of Device
+                        Name (_PLD, Package (0x1)  // _PLD: Physical Location of Device
                         {
+                            Buffer (0x10) {
                             /* 0000 */   0x81, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
                             /* 0008 */   0xA1, 0x10, 0x00, 0x00, 0x03, 0x00, 0x00, 0x00
                             /*           Revision : 01     */
@@ -8656,6 +8713,7 @@ DefinitionBlock ("dsdt.aml", "DSDT", 1, "HP    ", "INSYDE  ", 0xF0000000)
                             /*              Order : 00     */
                             /*     VerticalOffset : 0000   */
                             /*   HorizontalOffset : 0000   */
+                            }
                         })
                     }
 
@@ -8669,8 +8727,9 @@ DefinitionBlock ("dsdt.aml", "DSDT", 1, "HP    ", "INSYDE  ", 0xF0000000)
                             Zero, 
                             Zero
                         })
-                        Name (_PLD, Buffer (0x10)  // _PLD: Physical Location of Device
+                        Name (_PLD, Package (0x1)  // _PLD: Physical Location of Device
                         {
+                            Buffer (0x10) {
                             /* 0000 */   0x81, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
                             /* 0008 */   0xA0, 0x10, 0x00, 0x00, 0x03, 0x00, 0x00, 0x00
                             /*           Revision : 01     */
@@ -8698,6 +8757,7 @@ DefinitionBlock ("dsdt.aml", "DSDT", 1, "HP    ", "INSYDE  ", 0xF0000000)
                             /*              Order : 00     */
                             /*     VerticalOffset : 0000   */
                             /*   HorizontalOffset : 0000   */
+                            }
                         })
                     }
                 }
@@ -8724,8 +8784,9 @@ DefinitionBlock ("dsdt.aml", "DSDT", 1, "HP    ", "INSYDE  ", 0xF0000000)
                             Zero, 
                             Zero
                         })
-                        Name (_PLD, Buffer (0x10)  // _PLD: Physical Location of Device
+                        Name (_PLD, Package (0x1)  // _PLD: Physical Location of Device
                         {
+                            Buffer (0x10) {
                             /* 0000 */   0x81, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
                             /* 0008 */   0xA1, 0x10, 0x00, 0x00, 0x03, 0x00, 0x00, 0x00
                             /*           Revision : 01     */
@@ -8753,6 +8814,7 @@ DefinitionBlock ("dsdt.aml", "DSDT", 1, "HP    ", "INSYDE  ", 0xF0000000)
                             /*              Order : 00     */
                             /*     VerticalOffset : 0000   */
                             /*   HorizontalOffset : 0000   */
+                            }
                         })
                     }
 
@@ -8766,8 +8828,9 @@ DefinitionBlock ("dsdt.aml", "DSDT", 1, "HP    ", "INSYDE  ", 0xF0000000)
                             Zero, 
                             Zero
                         })
-                        Name (_PLD, Buffer (0x10)  // _PLD: Physical Location of Device
+                        Name (_PLD, Package (0x1)  // _PLD: Physical Location of Device
                         {
+                            Buffer (0x10) {
                             /* 0000 */   0x81, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
                             /* 0008 */   0xA0, 0x10, 0x00, 0x00, 0x03, 0x00, 0x00, 0x00
                             /*           Revision : 01     */
@@ -8795,6 +8858,7 @@ DefinitionBlock ("dsdt.aml", "DSDT", 1, "HP    ", "INSYDE  ", 0xF0000000)
                             /*              Order : 00     */
                             /*     VerticalOffset : 0000   */
                             /*   HorizontalOffset : 0000   */
+                            }
                         })
                     }
                 }
